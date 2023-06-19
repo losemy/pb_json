@@ -17,6 +17,6 @@ func Decode(r *ghttp.Request) {
 		r.Response.Write(data)
 		return
 	}
-	g.Log().Infof(nil, "js: %v", js)
+	g.Log().Infof(nil, "data -> result: %v -> %v", len(data), len(js))
 	r.Response.Write(js)
 }

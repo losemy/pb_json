@@ -13,6 +13,7 @@ func main() {
 	s := g.Server()
 
 	s.BindHandler("/decode", handler.Decode)
+	s.BindHandler("/api_decode", handler.ApiDecode)
 
 	port := g.Cfg().MustGet(context.Background(), "port")
 	s.SetPort(port.Int())
