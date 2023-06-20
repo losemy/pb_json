@@ -21,4 +21,4 @@ pm.sendRequest(decodeReq, function(err, res) {
 
 
 > 在控制台可查看
-![效果展示](docs/show.png)
+![效果展示](show.png)
