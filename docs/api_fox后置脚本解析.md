@@ -13,12 +13,12 @@ const decodeReq = {
 };
 
 pm.sendRequest(decodeReq, function(err, res) {
-  // let data = res.json()
-  // console.log(data);
-  // pm.environment.set("json_pb", data);
+    // let data = res.json()
+    // console.log(data);
+    // pm.environment.set("json_pb", data);
 });
 ```
 
 
 > 在控制台可查看
-![效果展示](https://github.com/losemy/pb_json/docs/show.png)
+![效果展示](docs/show.png)
