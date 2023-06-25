@@ -2,6 +2,7 @@ package handler
 
 import (
 	"io"
+	"net/http"
 
 	"pb_json/pb"
 
@@ -13,8 +14,8 @@ func Decode(r *ghttp.Request) {
 	data, _ := io.ReadAll(r.Body)
 	js, err := pb.Decode(data, nil)
 	if err != nil {
-		g.Log().Errorf(nil, "decode err: %v", err)
-		r.Response.Write(data)
+		g.Log().Errorf(nil, "decode err")
+		r.Response.WriteStatus(http.StatusBadRequest)
 		return
 	}
 	g.Log().Infof(nil, "data -> result: %v -> %v", len(data), len(js))
