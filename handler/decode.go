@@ -14,7 +14,7 @@ func Decode(r *ghttp.Request) {
 	data, _ := io.ReadAll(r.Body)
 	js, err := pb.Decode(data, nil)
 	if err != nil {
-		g.Log().Errorf(nil, "decode err")
+		g.Log().Infof(nil, "decode err")
 		r.Response.WriteStatus(http.StatusBadRequest)
 		return
 	}

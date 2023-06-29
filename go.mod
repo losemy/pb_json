@@ -3,6 +3,7 @@ module pb_json
 go 1.19
 
 require (
+	github.com/apache/thrift v0.18.1
 	github.com/gogf/gf/v2 v2.4.3
 	google.golang.org/protobuf v1.30.0
 )
@@ -10,6 +11,7 @@ require (
 require (
 	github.com/BurntSushi/toml v1.1.0 // indirect
 	github.com/clbanning/mxj/v2 v2.5.5 // indirect
+	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/go-logr/logr v1.2.3 // indirect

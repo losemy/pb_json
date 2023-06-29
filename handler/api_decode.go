@@ -20,7 +20,7 @@ func ApiDecode(r *ghttp.Request) {
 	r.Response.Header().Set("Content-Type", "application/json")
 	var stream *Stream
 	if err := json.Unmarshal(data, &stream); err != nil {
-		g.Log().Errorf(nil, "decode err")
+		g.Log().Infof(nil, "decode err")
 		r.Response.Write(data)
 		return
 	}
