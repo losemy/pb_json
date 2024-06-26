@@ -3,7 +3,6 @@ module pb_json
 go 1.19
 
 require (
-	github.com/apache/thrift v0.18.1
 	github.com/gogf/gf/v2 v2.4.3
 	google.golang.org/protobuf v1.30.0
 )
